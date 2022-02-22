@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NumberForm from './NumberForm';
+// import NumberForm from './NumberForm';
+import MultiForm from './MultiForm';
 // import './index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
-const st = {textAlign:'center'}
+// const st = {textAlign:'center'}
+const st = {
+  textAlign:'left',
+  padding:'10px'
+}
 
 ReactDOM.render(
   <div style={st}>
-    <NumberForm/>
+    <MultiForm/>
   </div>
 ,document.getElementById('root'))
 
