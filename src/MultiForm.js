@@ -43,6 +43,7 @@ export default class MultiForm extends React.Component{
                 <div>
                     <label>
                         年齢：<br/>
+                        {/* <input type='number' name="age" value={this.state.age} onChange={doChange}/> */}
                         <input type='text' name="age" value={this.state.age} onChange={doChange}/>
                     </label>
                 </div>
