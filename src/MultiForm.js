@@ -13,8 +13,9 @@ export default class MultiForm extends React.Component{
 
     // 値が変更されたとき
     doChange (e) {
-        const userValue = e.target.value
         const key = e.target.name
+        const userValue = key==='age' ? e.target.value.replace(/[^0-9]/g,'') : e.target.value
+        
         this.setState({[key]:userValue})
     }
 
@@ -42,7 +43,7 @@ export default class MultiForm extends React.Component{
                 <div>
                     <label>
                         年齢：<br/>
-                        <input type='number' name="age" value={this.state.age} onChange={doChange}/>
+                        <input type='text' name="age" value={this.state.age} onChange={doChange}/>
                     </label>
                 </div>
                 <div>
